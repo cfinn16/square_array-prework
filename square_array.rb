@@ -1,3 +1,7 @@
 def square_array(array)
- return array.each {|num| num ** 2}
+ new_array = []
+ array.each do |num| 
+  new_array.unshift(num**2)
+ end
+return new_array
 end
